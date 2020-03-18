@@ -9,7 +9,6 @@ void setup()
 {
   DDRD &= ~(1<<radar);
   PORTD |= (1<<radar);
-  Serial.begin(9600);
   DDRD |= (1<<ledR);
   DDRD |= (1<<ledY);
   DDRD |= (1<<ledG);
