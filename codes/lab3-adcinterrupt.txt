@@ -14,7 +14,7 @@ void loop()
 
 ISR(ADC_vect){
   int index;
-  index = ADCW/128; //indexed from 0-1023 to -7
+  index = ADCW/128; //indexed from 0-1023 to 0-7
   PORTD = (1<<index); //lighted up corresp. LED
   ADCSRA |= (1<<ADSC); //started back ADC   
 }
