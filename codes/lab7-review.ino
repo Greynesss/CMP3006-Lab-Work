@@ -66,7 +66,7 @@ ISR(INT0_vect){
 
 ISR(ADC_vect){
  //Serial.println(ADCW); //you can uncomment this
- ADCSRA |= (1<<ADSC);
+ ADCSRA |= (1<<ADSC); //ADSC BACK FOR CONTINUITY
 }
 
 ISR(TIMER1_COMPA_vect){
